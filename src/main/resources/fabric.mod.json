@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "warp",
+	"version": "${version}",
+	"name": "Warp",
+	"description": "",
+	"authors": [],
+	"contact": {},
+	"license": "LGPL-3.0",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"link.infra.warp.client.WarpClient"
+		],
+		"main": [
+			"link.infra.warp.Warp"
+		]
+	},
+	"mixins": [
+		"warp.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.11.6",
+		"fabric": "*",
+		"minecraft": "1.17"
+	},
+	"accessWidener": "warp.accesswidener"
+}

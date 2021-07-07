@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "link.infra.warp.mixin",
+	"compatibilityLevel": "JAVA_16",
+	"mixins": [
+		"client.ChunkDataAccessor",
+		"client.RebuildTaskMixin"
+	],
+	"client": [
+		"client.RenderPhaseAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
